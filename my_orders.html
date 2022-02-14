@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/logos/favicon_bota_fora.svg" type="img">
+    <title>YardSale | My orders</title>
+    <style>
+        /* la pseudoclase root puede ser util para declarar variables CSS goblados */
+        :root {
+            --white: #FFFFFF;
+            --black: #000000;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --dark: #232830;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .my-order {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            margin: 0;
+        }
+
+        .title {
+            font-size: var(--lg);
+            margin-bottom: 40px;
+        }
+
+        .my-order-container .my-order-content {
+            width: 400px;
+            border-radius: 8px;
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            align-items: center;
+            height: 60px;
+            margin-bottom: 12px;
+        }
+
+        .my-order-container .my-order-content .article-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .my-order-container .my-order-content .article-info span:first-child {
+            color: var(--black);
+            font-weight: 600;
+            font-size: var(--lg);
+        }
+
+        .my-order-container .my-order-content .article-info span:last-child {
+            color: var(--very-light-pink);
+            font-weight: 300;
+            font-size: var(--sm);
+        }
+
+        .my-order-container .my-order-content .article-price {
+            color: var(--dark);
+            font-size: var(--lg);
+            font-weight: 400;
+            text-align: end;
+        }
+
+        
+        .article-info span {
+            margin-bottom: 4px;
+        }
+        
+        .my-order-content img {
+            width: 7px;
+            margin-left: 12px;
+        }
+
+        @media (max-width: 640px) {
+            .title {
+                display: none;
+            }
+            .my-order-container .my-order-content {
+                width: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="my-order">
+
+        <div class="my-order-container">
+
+            <h1 class="title">My order</h1>
+
+            <div class="my-order-content">
+                <p class="article-info">
+                    <span>04.25.21</span>
+                    <span>6 articles</span>
+                </p>
+                <p class="article-price">$ 560.00</p>
+
+                <img src="/icons/flechita.svg" alt="">
+            </div>
+            <div class="my-order-content">
+                <p class="article-info">
+                    <span>04.25.21</span>
+                    <span>6 articles</span>
+                </p>
+                <p class="article-price">$ 560.00</p>
+
+                <img src="/icons/flechita.svg" alt="">
+            </div>
+            <div class="my-order-content">
+                <p class="article-info">
+                    <span>04.25.21</span>
+                    <span>6 articles</span>
+                </p>
+                <p class="article-price">$ 560.00</p>
+
+                <img src="/icons/flechita.svg" alt="">
+            </div>
+            <div class="my-order-content">
+                <p class="article-info">
+                    <span>04.25.21</span>
+                    <span>6 articles</span>
+                </p>
+                <p class="article-price">$ 560.00</p>
+
+                <img src="/icons/flechita.svg" alt="">
+            </div>
+            <div class="my-order-content">
+                <p class="article-info">
+                    <span>04.25.21</span>
+                    <span>6 articles</span>
+                </p>
+                <p class="article-price">$ 560.00</p>
+
+                <img src="/icons/flechita.svg" alt="">
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
